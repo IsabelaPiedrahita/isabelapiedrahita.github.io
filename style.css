@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --bg-crema: #f4f1ea;
+    --container-white: #ffffff;
+    --text-dark: #1a1a1a;
+    --gold-accent: #b38b4c;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Playfair Display', serif;
+    background-color: var(--bg-crema);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--gold-accent);
+}
+
+.header-name {
+    font-size: 2.2rem;
+    letter-spacing: 5px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: var(--text-dark);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: var(--gold-accent);
+}
+
+main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background-color: var(--container-white);
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--gold-accent);
+    object-fit: cover;
+}
+
+.welcome-text h2 {
+    color: var(--text-dark);
+    margin-top: 0;
+    border-bottom: 2px solid var(--gold-accent);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-dark);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--gold-accent);
+    max-width: 900px;
+    margin: 0 auto;
+}

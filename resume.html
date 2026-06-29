@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Resume | Isabela Piedrahita Russi</title>
+    <style>
+        :root {
+            --bg-crema: #f4f1ea;
+            --container-white: #ffffff;
+            --text-dark: #1a1a1a;
+            --gold-accent: #b38b4c;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: var(--bg-crema);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid var(--gold-accent);
+        }
+
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 3rem;
+            background-color: var(--container-white);
+        }
+
+        .resume-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+
+        .profile-img-resume {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid var(--gold-accent);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: var(--text-dark);
+            border-bottom: 2px solid var(--gold-accent);
+            display: inline-block;
+            margin-top: 30px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: var(--text-dark);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Isabela Piedrahita Russi | Professional Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="goals.html">Goals</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="resume-container">
+            <aside class="sidebar">
+                <img src="isa2.jpg" alt="Isabela" class="profile-img-resume">
+                <h3>Contact</h3>
+                <p>Pereira, Colombia / Natchitoches, US</p>
+                <a href="resume.pdf" class="download-btn">Download PDF</a>
+            </aside>
+
+            <section class="content">
+                <h2 class="section-title">Education</h2>
+                <ul>
+                    <li>Bachelor - De la Salle Pereira Bilingual School, Colombia</li>
+                    <li>Undergraduate of Business Administration - Universidad Libre Pereira, Colombia</li>
+                    <li>Major of Business Administration - Northwestern State University, US</li>
+                    <li>Minor in Computer Information Systems - Northwestern State University, US</li>
+                    <li>Management Concentration - Northwestern State University, US</li>
+                </ul>
+
+                <h2 class="section-title">Work Experience</h2>
+                <ul>
+                    <li><strong>General Project Management</strong>, Superjuegos Casinos, Colombia</li>
+                    <li><strong>Resident Assistant</strong>, Campus Living Villages, NSU</li>
+                    <li><strong>Facility Worker</strong>, Wellness, Recreation and Activity Center, NSU</li>
+                </ul>
+
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>Programming and Coding</li>
+                    <li>Web Page Development</li>
+                    <li>Leadership (6+ years)</li>
+                    <li>Business Development Plans</li>
+                    <li>Strategic Planning and Analysis</li>
+                    <li>Strategic Project Management</li>
+                </ul>
+
+                <h2 class="section-title">Certifications</h2>
+                <ul>
+                    <li>CompTIA Tech + | M.O.S (Microsoft)</li>
+                    <li>AI Specializations (Coursera)</li>
+                </ul>
+
+                <h2 class="section-title">Awards & Activities</h2>
+                <ul>
+                    <li>Leadership Trainer and Coach, De La Salle Pereira Bilingual School</li>
+                    <li>Academic Model of United Nations (CAPEMUN), Colombia 2021</li>
+                    <li>Student Activities and Orientation Board, NSU</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
