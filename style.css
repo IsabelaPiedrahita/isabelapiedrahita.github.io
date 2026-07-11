@@ -1,6 +1,5 @@
 /* ============================================================
    styles.css
-   Isabela Piedrahita Russi - Portfolio Profesional
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap');
@@ -17,7 +16,7 @@
     --transition-fast: 0.3s ease;
 }
 
-/* ---------- Reset básico ---------- */
+/* ---------- Reset basico ---------- */
 * {
     box-sizing: border-box;
 }
