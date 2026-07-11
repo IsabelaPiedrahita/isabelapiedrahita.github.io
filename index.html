@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> 
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -57,53 +57,59 @@
             <p>Demonstrations of CSS techniques learned in this course.</p>
 
             <div class="showcase">
-
                 <div class="showcase-item">
                     <h4>1a. Text — Shadow</h4>
                     <p class="texto-sombra">Isabela P. Russi</p>
                 </div>
-
                 <div class="showcase-item">
                     <h4>1b. Text — Glow</h4>
                     <p class="texto-glow">Technology &amp; Business</p>
                 </div>
-
                 <div class="showcase-item">
                     <h4>1c. Text — Letter Spacing</h4>
                     <p class="texto-espaciado">Leadership</p>
                 </div>
-
                 <div class="showcase-item">
                     <h4>1d. Text — Color Gradient</h4>
                     <p class="texto-gradiente">Innovation</p>
                 </div>
-
                 <div class="showcase-item">
                     <h4>2. Image — Filter + Shadow + Border</h4>
                     <img src="https://picsum.photos/seed/showcase-img/220/160" alt="Example image with sepia filter" class="showcase-img">
                 </div>
-
                 <div class="showcase-item">
                     <h4>3. Linear Gradient</h4>
                     <div class="gradiente-box"></div>
                 </div>
-
                 <div class="showcase-item">
                     <h4>4. CSS Animation</h4>
                     <div class="animacion-box"></div>
                 </div>
-
                 <div class="showcase-item">
                     <h4>5. Transition (hover)</h4>
                     <button class="transicion-btn" type="button">Hover here</button>
                 </div>
-
                 <div class="showcase-item">
                     <h4>6. Transformation (hover)</h4>
                     <div class="transform-caja">rotate + scale + skew</div>
                 </div>
-
             </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="mailto:ipiedrahitarus401205@nsula.edu" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Addy (Email):</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
 
     </main>
