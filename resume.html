@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <title>Resume | Isabela Piedrahita Russi</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         :root {
             --bg-crema: #f4f1ea;
@@ -12,34 +13,10 @@
             --text-dark: #1a1a1a;
             --gold-accent: #b38b4c;
         }
-
-        body {
-            margin: 0;
-            font-family: 'Playfair Display', serif;
-            background-color: var(--bg-crema);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 2px solid var(--gold-accent);
-        }
-
-        nav a {
-            color: var(--text-dark);
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
         main {
             max-width: 900px;
-            margin: 3rem auto;
-            padding: 3rem;
+            margin: 2rem auto;
+            padding: 2rem;
             background-color: var(--container-white);
         }
 
@@ -50,11 +27,11 @@
         }
 
         .profile-img-resume {
-            width: 200px;
-            height: 200px;
+            width: 100%;
+            max-width: 200px;
             border-radius: 50%;
             border: 3px solid var(--gold-accent);
-            object-fit: cover;
+            display: block;
             margin-bottom: 20px;
         }
 
@@ -62,10 +39,11 @@
             color: var(--text-dark);
             border-bottom: 2px solid var(--gold-accent);
             display: inline-block;
-            margin-top: 30px;
+            margin-top: 25px;
             text-transform: uppercase;
             font-size: 1.2rem;
             letter-spacing: 1px;
+            width: 100%;
         }
 
         .download-btn {
@@ -73,21 +51,29 @@
             margin-top: 20px;
             padding: 10px 20px;
             background: var(--text-dark);
-            color: white;
+            color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            text-align: center;
         }
 
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .resume-container { grid-template-columns: 1fr; }
+            .sidebar { text-align: center; }
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Isabela Piedrahita Russi | Professional Portfolio</h1>
-        <nav>
+         <nav>
             <a href="index.html">Home</a>
+            <a href="javascript.html">Javascript</a>
             <a href="resume.html">Resume</a>
             <a href="goals.html">Goals</a>
             <a href="portfolio.html">Portfolio</a>
